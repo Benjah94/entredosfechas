@@ -15,4 +15,10 @@ botonFecha.onclick = function (){
 .then(fotoFecha => (
     imagenFecha.src = fotoFecha[0].hdurl
 ))
+.then(fotoFecha => (
+    titulo.innerHTML = fotoFecha[0].titulo
+))
+for (let i = 0; i < fotoFecha.length; i++) {
+        imagenSeleccionada = fotoFecha[i]; 
+    }
 }
